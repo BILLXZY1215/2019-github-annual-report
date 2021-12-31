@@ -10,6 +10,7 @@ from datetime import datetime
 
 from github4.tools.request import Request
 
+
 class Github:
 
     BASE_URL = "https://api.github.com/graphql"
@@ -22,15 +23,15 @@ class Github:
         '''
         self.access_token = access_token
         self.request = Request(access_token=self.access_token)
-        
+
     def get_user(self, github_id):
         '''
         @description: 查询用户数据
         @param : 
         @return: 
         '''
-        begin = datetime(2018, 12, 30, 0, 0).isoformat()
-        end = datetime(2019, 12, 29, 0, 0).isoformat()
+        begin = datetime(2021, 1, 1, 0, 0).isoformat()
+        end = datetime(2021, 12, 31, 0, 0).isoformat()
         query = """
         {
             user(login: "%s") {
@@ -59,7 +60,7 @@ class Github:
                 }
             }
         } 
-        """% (github_id, begin, end)
+        """ % (github_id, begin, end)
         data = self.request.query_request(query=query)
         # print(data)
         return data

@@ -4,7 +4,7 @@ from annual_report import AnnualReport
 
 
 if __name__ == "__main__":
-    ar = AnnualReport(github_id="JalanJiang")
+    ar = AnnualReport(github_id="BILLXZY1215")
     if not ar.check_user_data():
         print("查无此人")
     else:
