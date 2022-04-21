@@ -1,6 +1,6 @@
 # GitHub 2021 年度报告
 
-指定 GitHub ID，生成一份该用户的 2019 GitHub 年度报告，基于 Python 3.7.4。
+指定 GitHub ID，生成一份该用户的 2021 GitHub 年度报告，基于 Python 3.7.4。
 
 报告主要数据包括：
 
